@@ -21,9 +21,9 @@ services:
       - 80:80
     environment:
       - PHP_MEMORY_LIMIT=512M
-#    volumes:
+    volumes:
 #      - ./web:/opt/drupal/web
-#      - ./composer.json:/opt/drupal/composer.json
+      - ./composer.json:/opt/drupal/composer.json
 #      - ./composer.lock:/opt/drupal/composer.lock
 #      - ./vendor:/opt/drupal/vendor
 
